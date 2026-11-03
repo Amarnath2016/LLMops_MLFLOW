@@ -1,0 +1,114 @@
+text,latency_s,input_tokens,output_tokens,total_tokens,cost_usd,prompt_label,prompt_version,question_id,valid_json,schema_ok
+"```json
+{
+  ""question"": ""What is the difference between supervised and unsupervised learning?"",
+  ""answer"": ""Supervised learning uses labeled data—each input is paired with a known output—so the model learns to map inputs to outputs. Unsupervised learning uses unlabeled data; the model discovers patterns, structures, or groupings within the data without explicit guidance on what the output should be."",
+  ""key_points"": [
+    {
+      ""aspect"": ""Data labeling"",
+      ""supervised"": ""Requires labeled examples (input-output pairs)."",
+      ""unsupervised"": ""No labels; data is raw and unlabeled.""
+    },
+    {
+      ""aspect"": ""Goal"",
+      ""supervised"": ""Predict or classify new inputs based on learned mapping."",
+      ""unsupervised"": ""Identify hidden structure, such as clusters, associations, or dimensionality reduction.""
+    },
+    {
+      ""aspect"": ""Common algorithms"",
+      ""supervised"": [""Linear regression"", ""Logistic regression"", ""Support Vector Machines"", ""Neural networks""],
+      ""unsupervised"": [""K-means clustering"", ""Hierarchical clustering"", ""Principal Component Analysis"", ""Autoencoders""]
+    },
+    {
+      ""aspect"": ""Evaluation"",
+      ""supervised"": ""Use metrics like accuracy, precision, recall, RMSE on a labeled test set."",
+      ""unsupervised"": ""Use internal metrics (silhouette score, Davies–Bouldin index) or domain-specific validation.""
+    }
+  ]
+}
+```",0.7829941710001549,97,384,481,0.00024494999999999996,V1,1,1,0,0
+"{""answer"":""The bias‑variance tradeoff is a fundamental concept in statistical learning that describes the relationship between two sources of error in a predictive model:\n\n1. **Bias** – The error introduced by approximating a real‑world problem, which may be extremely complex, by a much simpler model. High bias means the model makes strong assumptions (e.g., linearity) and tends to underfit the data, producing predictions that are systematically off.\n\n2. **Variance** – The error introduced by sensitivity to small fluctuations in the training data. High variance means the model captures noise as if it were signal, leading to overfitting: it performs well on training data but poorly on unseen data.\n\nIn practice, reducing bias (e.g., by using a more flexible model) often increases variance, while reducing variance (e.g., by simplifying the model or adding regularization) often increases bias. The goal is to find a sweet spot where the total expected error (bias² + variance + irreducible noise) is minimized. Techniques such as cross‑validation, regularization, ensemble methods, and model selection help navigate this tradeoff to achieve good generalization performance.""}",1.1856969039999967,93,354,447,0.00022634999999999997,V1,1,2,1,0
+"{""answer"":""Inflation in an economy can arise from several interrelated factors:\n\n1. **Demand‑pull inflation** – When aggregate demand outpaces aggregate supply, prices rise. This can be driven by strong consumer spending, increased government expenditure, or rapid investment growth.\n\n2. **Cost‑push inflation** – Rising production costs (e.g., higher wages, increased commodity prices, or supply chain disruptions) compel firms to raise prices to maintain profit margins.\n\n3. **Built‑in or expectations‑driven inflation** – If workers and firms expect future price increases, they may demand higher wages and set higher prices pre‑emptively, creating a self‑fulfilling cycle.\n\n4. **Monetary factors** – Excessive growth of the money supply relative to real output can lead to more money chasing the same goods, pushing prices up. Central bank policies that keep interest rates too low for extended periods can also fuel inflation.\n\n5. **Supply shocks** – Sudden reductions in supply of key inputs (e.g., oil price spikes, natural disasters) can tighten supply curves, raising prices.\n\n6. **Exchange‑rate movements** – A depreciation of the domestic currency makes imports more expensive, contributing to overall price levels.\n\n7. **Structural and institutional factors** – Market imperfections, monopolistic practices, or inefficient allocation of resources can also generate persistent price pressures.\n\nIn practice, most inflationary episodes result from a combination of these forces rather than a single cause.""}",1.7505524939997485,92,437,529,0.000276,V1,1,3,1,0
+"{""answer"":""Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy, producing glucose and oxygen from carbon dioxide and water. It occurs mainly in chloroplasts, where chlorophyll pigments absorb sunlight. The process is divided into two main stages:\n\n1. Light‑dependent reactions (the \""light reactions\""):\n   - Light energy excites electrons in chlorophyll, which are transferred through an electron transport chain.\n   - This generates a proton gradient that drives ATP synthesis via ATP synthase.\n   - Electrons reduce NADP⁺ to NADPH.\n   - Water molecules are split (photolysis) to replace lost electrons, releasing O₂ as a by‑product.\n\n2. Light‑independent reactions (the Calvin cycle or \""dark reactions\""):\n   - ATP and NADPH produced in the light reactions provide energy and reducing power.\n   - Carbon dioxide is fixed into organic molecules by the enzyme Rubisco, forming 3‑phosphoglycerate.\n   - Through a series of enzymatic steps, 3‑phosphoglycerate is converted into glyceraldehyde‑3‑phosphate (G3P).\n   - G3P can be used to synthesize glucose and other carbohydrates, while some is recycled to regenerate ribulose‑bisphosphate, the CO₂ acceptor.\n\nOverall, the net equation for photosynthesis is:\n   6 CO₂ + 6 H₂O + light energy → C₆H₁₂O₆ + 6 O₂.\n\nThis process not only fuels the plant’s own growth but also supplies oxygen and organic matter to the rest of the biosphere.""}",0.9948845139997502,91,559,650,0.00034905,V1,1,4,1,0
+"```json
+{
+  ""time_complexity"": ""O(log n)"",
+  ""description"": ""Binary search repeatedly divides the sorted array in half, eliminating half of the remaining elements at each step."",
+  ""why"": ""Each comparison reduces the search space by a factor of two, so the number of steps needed to locate an element (or determine its absence) grows logarithmically with the size of the input array.""
+}
+```",0.6690859600003023,96,213,309,0.0001422,V1,1,5,0,0
+"{""question"":""Explain Newton's second law of motion."",""answer"":""Newton's second law of motion states that the net force acting on an object is equal to the rate of change of its momentum. For a constant mass, this simplifies to the familiar equation \u201cF = m·a\u201d, where:\n\n* **F** is the net external force vector applied to the object.\n* **m** is the object's mass (assumed constant in the simplest form).\n* **a** is the resulting acceleration vector.\n\nKey points:\n1. **Vector nature** – Both force and acceleration are vectors; the direction of the force determines the direction of acceleration.\n2. **Proportionality** – The acceleration produced is directly proportional to the applied force and inversely proportional to the mass.\n3. **Momentum form** – In general, \u201cF = dp/dt\u201d, where \(p = m v\) is momentum. For variable mass systems (e.g., rockets), the full form must be used.\n4. **Implications** – This law explains why heavier objects accelerate less under the same force and provides the foundation for dynamics, engineering calculations, and many physical predictions.\n5. **Examples**:\n   * Pushing a stationary car: a small force yields a small acceleration because of the car’s large mass.\n   * Throwing a ball: a larger applied force results in a higher acceleration and greater speed.\n\nNewton's second law is central to classical mechanics, linking forces to motion and enabling the quantitative analysis of physical systems.""}",0.9824520130000565,93,485,578,0.00030495,V1,1,6,0,0
+"```json
+{
+  ""TCP"": {
+    ""description"": ""Transmission Control Protocol is a connection-oriented, reliable, byte-stream protocol that ensures ordered delivery of data with error checking, flow control, and congestion control."",
+    ""key_features"": [
+      ""Connection establishment (3‑way handshake)"",
+      ""Acknowledgments and retransmission of lost packets"",
+      ""Sequence numbers for ordering"",
+      ""Flow control (windowing)"",
+      ""Congestion control (e.g., TCP Reno, Cubic)"",
+      ""Full duplex communication""
+    ],
+    ""typical_use_cases"": [
+      ""Web browsing (HTTP/HTTPS)"",
+      ""File transfer (FTP, SFTP)"",
+      ""Email (SMTP, IMAP, POP3)"",
+      ""Remote login (SSH, Telnet)"",
+      ""Any application requiring guaranteed delivery""
+    ]
+  },
+  ""UDP"": {
+    ""description"": ""User Datagram Protocol is a connectionless, lightweight protocol that sends datagrams without guaranteeing delivery, ordering, or error recovery."",
+    ""key_features"": [
+      ""No connection setup or teardown"",
+      ""No acknowledgments or retransmissions"",
+      ""No sequencing or ordering guarantees"",
+      ""Minimal header overhead (8 bytes)"",
+      ""No flow or congestion control"",
+      ""Best-effort delivery""
+    ],
+    ""typical_use_cases"": [
+      ""Real‑time audio/video streaming (VoIP, IPTV)"",
+      ""Online gaming"",
+      ""DNS queries"",
+      ""DHCP"",
+      ""Broadcast/multicast applications""
+    ]
+  },
+  ""differences"": [
+    ""Connection model: TCP is connection-oriented; UDP is connectionless."",
+    ""Reliability: TCP guarantees delivery with retransmission; UDP does not."",
+    ""Ordering: TCP preserves byte order; UDP may deliver packets out of order."",
+    ""Flow control: TCP uses windowing; UDP has none."",
+    ""Congestion control: TCP implements congestion avoidance; UDP has none."",
+    ""Overhead: TCP has larger headers and handshake; UDP has minimal overhead."",
+    ""Speed: UDP is faster due to lower overhead; TCP can be slower due to reliability mechanisms."",
+    ""Use cases: TCP for applications needing reliability; UDP for latency‑sensitive, real‑time traffic.""
+  ]
+}
+```",0.9318424519997279,94,592,686,0.0003693,V1,1,7,0,0
+"```json
+{
+  ""causes"": [
+    ""Militarism: An intense arms race and the glorification of military power among European states."",
+    ""Alliances: The formation of rigid alliance systems (Triple Entente and Triple Alliance) that bound countries to support one another."",
+    ""Imperialism: Competition for overseas colonies and global influence heightened tensions."",
+    ""Nationalism: Strong nationalistic sentiments and ethnic conflicts, especially in the Balkans."",
+    ""Assassination of Archduke Franz Ferdinand: The immediate spark that triggered the war.""
+  ],
+  ""summary"": ""The outbreak of World War I was the result of a complex interplay of militarism, alliance entanglements, imperial competition, nationalist fervor, and the assassination of Archduke Franz Ferdinand, which together created a volatile environment that led to the global conflict of 1914.""
+}
+```",0.9345140420000462,96,527,623,0.0003306,V1,1,8,0,0
+"```json
+{
+  ""question"": ""What is a p-value in statistics?"",
+  ""answer"": ""In hypothesis testing, a p-value is the probability of observing data at least as extreme as the sample, assuming the null hypothesis is true. It quantifies the evidence against the null hypothesis: a small p-value indicates that such extreme data would be unlikely under the null, leading to rejection of the null hypothesis.""
+}
+```",0.6425736149999466,93,262,355,0.00017114999999999999,V1,1,9,0,0
+"```json
+{
+  ""question"": ""Explain what a neural network activation function does."",
+  ""answer"": ""An activation function in a neural network determines how the weighted sum of inputs to a neuron is transformed into the neuron's output. It introduces non‑linearity, allowing the network to learn complex patterns. By applying a non‑linear mapping (e.g., sigmoid, ReLU, tanh), the activation function enables the network to approximate arbitrary functions, facilitates gradient propagation during back‑propagation, and controls the output range and sparsity of activations.""
+}
+```",0.495614494000165,94,173,267,0.0001179,V1,1,10,0,0

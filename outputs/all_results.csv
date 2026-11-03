@@ -1,0 +1,134 @@
+text,latency_s,input_tokens,output_tokens,total_tokens,cost_usd,prompt_label,prompt_version,question_id,valid_json,schema_ok
+"```json
+{
+  ""question"": ""What is the difference between supervised and unsupervised learning?"",
+  ""answer"": ""Supervised learning uses labeled data—each input is paired with a known output—so the model learns to map inputs to outputs. Unsupervised learning uses unlabeled data; the model discovers patterns, structures, or groupings within the data without explicit guidance on what the output should be."",
+  ""key_points"": [
+    {
+      ""aspect"": ""Data labeling"",
+      ""supervised"": ""Requires labeled examples (input-output pairs)."",
+      ""unsupervised"": ""No labels; data is raw and unlabeled.""
+    },
+    {
+      ""aspect"": ""Goal"",
+      ""supervised"": ""Predict or classify new inputs based on learned mapping."",
+      ""unsupervised"": ""Identify hidden structure, such as clusters, associations, or dimensionality reduction.""
+    },
+    {
+      ""aspect"": ""Common algorithms"",
+      ""supervised"": [""Linear regression"", ""Logistic regression"", ""Support Vector Machines"", ""Neural networks""],
+      ""unsupervised"": [""K-means clustering"", ""Hierarchical clustering"", ""Principal Component Analysis"", ""Autoencoders""]
+    },
+    {
+      ""aspect"": ""Evaluation"",
+      ""supervised"": ""Use metrics like accuracy, precision, recall, RMSE on a labeled test set."",
+      ""unsupervised"": ""Use internal metrics (silhouette score, Davies–Bouldin index) or domain-specific validation.""
+    }
+  ]
+}
+```",0.7829941710001549,97,384,481,0.00024494999999999996,V1,1,1,0,0
+"{""answer"":""The bias‑variance tradeoff is a fundamental concept in statistical learning that describes the relationship between two sources of error in a predictive model:\n\n1. **Bias** – The error introduced by approximating a real‑world problem, which may be extremely complex, by a much simpler model. High bias means the model makes strong assumptions (e.g., linearity) and tends to underfit the data, producing predictions that are systematically off.\n\n2. **Variance** – The error introduced by sensitivity to small fluctuations in the training data. High variance means the model captures noise as if it were signal, leading to overfitting: it performs well on training data but poorly on unseen data.\n\nIn practice, reducing bias (e.g., by using a more flexible model) often increases variance, while reducing variance (e.g., by simplifying the model or adding regularization) often increases bias. The goal is to find a sweet spot where the total expected error (bias² + variance + irreducible noise) is minimized. Techniques such as cross‑validation, regularization, ensemble methods, and model selection help navigate this tradeoff to achieve good generalization performance.""}",1.1856969039999967,93,354,447,0.00022634999999999997,V1,1,2,1,0
+"{""answer"":""Inflation in an economy can arise from several interrelated factors:\n\n1. **Demand‑pull inflation** – When aggregate demand outpaces aggregate supply, prices rise. This can be driven by strong consumer spending, increased government expenditure, or rapid investment growth.\n\n2. **Cost‑push inflation** – Rising production costs (e.g., higher wages, increased commodity prices, or supply chain disruptions) compel firms to raise prices to maintain profit margins.\n\n3. **Built‑in or expectations‑driven inflation** – If workers and firms expect future price increases, they may demand higher wages and set higher prices pre‑emptively, creating a self‑fulfilling cycle.\n\n4. **Monetary factors** – Excessive growth of the money supply relative to real output can lead to more money chasing the same goods, pushing prices up. Central bank policies that keep interest rates too low for extended periods can also fuel inflation.\n\n5. **Supply shocks** – Sudden reductions in supply of key inputs (e.g., oil price spikes, natural disasters) can tighten supply curves, raising prices.\n\n6. **Exchange‑rate movements** – A depreciation of the domestic currency makes imports more expensive, contributing to overall price levels.\n\n7. **Structural and institutional factors** – Market imperfections, monopolistic practices, or inefficient allocation of resources can also generate persistent price pressures.\n\nIn practice, most inflationary episodes result from a combination of these forces rather than a single cause.""}",1.7505524939997485,92,437,529,0.000276,V1,1,3,1,0
+"{""answer"":""Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy, producing glucose and oxygen from carbon dioxide and water. It occurs mainly in chloroplasts, where chlorophyll pigments absorb sunlight. The process is divided into two main stages:\n\n1. Light‑dependent reactions (the \""light reactions\""):\n   - Light energy excites electrons in chlorophyll, which are transferred through an electron transport chain.\n   - This generates a proton gradient that drives ATP synthesis via ATP synthase.\n   - Electrons reduce NADP⁺ to NADPH.\n   - Water molecules are split (photolysis) to replace lost electrons, releasing O₂ as a by‑product.\n\n2. Light‑independent reactions (the Calvin cycle or \""dark reactions\""):\n   - ATP and NADPH produced in the light reactions provide energy and reducing power.\n   - Carbon dioxide is fixed into organic molecules by the enzyme Rubisco, forming 3‑phosphoglycerate.\n   - Through a series of enzymatic steps, 3‑phosphoglycerate is converted into glyceraldehyde‑3‑phosphate (G3P).\n   - G3P can be used to synthesize glucose and other carbohydrates, while some is recycled to regenerate ribulose‑bisphosphate, the CO₂ acceptor.\n\nOverall, the net equation for photosynthesis is:\n   6 CO₂ + 6 H₂O + light energy → C₆H₁₂O₆ + 6 O₂.\n\nThis process not only fuels the plant’s own growth but also supplies oxygen and organic matter to the rest of the biosphere.""}",0.9948845139997502,91,559,650,0.00034905,V1,1,4,1,0
+"```json
+{
+  ""time_complexity"": ""O(log n)"",
+  ""description"": ""Binary search repeatedly divides the sorted array in half, eliminating half of the remaining elements at each step."",
+  ""why"": ""Each comparison reduces the search space by a factor of two, so the number of steps needed to locate an element (or determine its absence) grows logarithmically with the size of the input array.""
+}
+```",0.6690859600003023,96,213,309,0.0001422,V1,1,5,0,0
+"{""question"":""Explain Newton's second law of motion."",""answer"":""Newton's second law of motion states that the net force acting on an object is equal to the rate of change of its momentum. For a constant mass, this simplifies to the familiar equation \u201cF = m·a\u201d, where:\n\n* **F** is the net external force vector applied to the object.\n* **m** is the object's mass (assumed constant in the simplest form).\n* **a** is the resulting acceleration vector.\n\nKey points:\n1. **Vector nature** – Both force and acceleration are vectors; the direction of the force determines the direction of acceleration.\n2. **Proportionality** – The acceleration produced is directly proportional to the applied force and inversely proportional to the mass.\n3. **Momentum form** – In general, \u201cF = dp/dt\u201d, where \(p = m v\) is momentum. For variable mass systems (e.g., rockets), the full form must be used.\n4. **Implications** – This law explains why heavier objects accelerate less under the same force and provides the foundation for dynamics, engineering calculations, and many physical predictions.\n5. **Examples**:\n   * Pushing a stationary car: a small force yields a small acceleration because of the car’s large mass.\n   * Throwing a ball: a larger applied force results in a higher acceleration and greater speed.\n\nNewton's second law is central to classical mechanics, linking forces to motion and enabling the quantitative analysis of physical systems.""}",0.9824520130000565,93,485,578,0.00030495,V1,1,6,0,0
+"```json
+{
+  ""TCP"": {
+    ""description"": ""Transmission Control Protocol is a connection-oriented, reliable, byte-stream protocol that ensures ordered delivery of data with error checking, flow control, and congestion control."",
+    ""key_features"": [
+      ""Connection establishment (3‑way handshake)"",
+      ""Acknowledgments and retransmission of lost packets"",
+      ""Sequence numbers for ordering"",
+      ""Flow control (windowing)"",
+      ""Congestion control (e.g., TCP Reno, Cubic)"",
+      ""Full duplex communication""
+    ],
+    ""typical_use_cases"": [
+      ""Web browsing (HTTP/HTTPS)"",
+      ""File transfer (FTP, SFTP)"",
+      ""Email (SMTP, IMAP, POP3)"",
+      ""Remote login (SSH, Telnet)"",
+      ""Any application requiring guaranteed delivery""
+    ]
+  },
+  ""UDP"": {
+    ""description"": ""User Datagram Protocol is a connectionless, lightweight protocol that sends datagrams without guaranteeing delivery, ordering, or error recovery."",
+    ""key_features"": [
+      ""No connection setup or teardown"",
+      ""No acknowledgments or retransmissions"",
+      ""No sequencing or ordering guarantees"",
+      ""Minimal header overhead (8 bytes)"",
+      ""No flow or congestion control"",
+      ""Best-effort delivery""
+    ],
+    ""typical_use_cases"": [
+      ""Real‑time audio/video streaming (VoIP, IPTV)"",
+      ""Online gaming"",
+      ""DNS queries"",
+      ""DHCP"",
+      ""Broadcast/multicast applications""
+    ]
+  },
+  ""differences"": [
+    ""Connection model: TCP is connection-oriented; UDP is connectionless."",
+    ""Reliability: TCP guarantees delivery with retransmission; UDP does not."",
+    ""Ordering: TCP preserves byte order; UDP may deliver packets out of order."",
+    ""Flow control: TCP uses windowing; UDP has none."",
+    ""Congestion control: TCP implements congestion avoidance; UDP has none."",
+    ""Overhead: TCP has larger headers and handshake; UDP has minimal overhead."",
+    ""Speed: UDP is faster due to lower overhead; TCP can be slower due to reliability mechanisms."",
+    ""Use cases: TCP for applications needing reliability; UDP for latency‑sensitive, real‑time traffic.""
+  ]
+}
+```",0.9318424519997279,94,592,686,0.0003693,V1,1,7,0,0
+"```json
+{
+  ""causes"": [
+    ""Militarism: An intense arms race and the glorification of military power among European states."",
+    ""Alliances: The formation of rigid alliance systems (Triple Entente and Triple Alliance) that bound countries to support one another."",
+    ""Imperialism: Competition for overseas colonies and global influence heightened tensions."",
+    ""Nationalism: Strong nationalistic sentiments and ethnic conflicts, especially in the Balkans."",
+    ""Assassination of Archduke Franz Ferdinand: The immediate spark that triggered the war.""
+  ],
+  ""summary"": ""The outbreak of World War I was the result of a complex interplay of militarism, alliance entanglements, imperial competition, nationalist fervor, and the assassination of Archduke Franz Ferdinand, which together created a volatile environment that led to the global conflict of 1914.""
+}
+```",0.9345140420000462,96,527,623,0.0003306,V1,1,8,0,0
+"```json
+{
+  ""question"": ""What is a p-value in statistics?"",
+  ""answer"": ""In hypothesis testing, a p-value is the probability of observing data at least as extreme as the sample, assuming the null hypothesis is true. It quantifies the evidence against the null hypothesis: a small p-value indicates that such extreme data would be unlikely under the null, leading to rejection of the null hypothesis.""
+}
+```",0.6425736149999466,93,262,355,0.00017114999999999999,V1,1,9,0,0
+"```json
+{
+  ""question"": ""Explain what a neural network activation function does."",
+  ""answer"": ""An activation function in a neural network determines how the weighted sum of inputs to a neuron is transformed into the neuron's output. It introduces non‑linearity, allowing the network to learn complex patterns. By applying a non‑linear mapping (e.g., sigmoid, ReLU, tanh), the activation function enables the network to approximate arbitrary functions, facilitates gradient propagation during back‑propagation, and controls the output range and sparsity of activations.""
+}
+```",0.495614494000165,94,173,267,0.0001179,V1,1,10,0,0
+"{""answer"":""Supervised learning trains a model on labeled data to predict an output variable, whereas unsupervised learning works with unlabeled data to discover hidden patterns or structure such as clusters or dimensionality reduction."",""confidence"":""high"",""key_points"":[""Uses labeled data for prediction"",""Unlabeled data for pattern discovery"",""Typical tasks: classification vs clustering""]}",0.3022918619999473,168,180,348,0.0001332,V2,2,1,1,1
+"{""answer"":""The bias–variance tradeoff describes how a model’s error can be decomposed into two complementary parts: bias, the error from making overly simplistic assumptions about the data, and variance, the error from the model’s sensitivity to fluctuations in the training set. A very simple model (high bias, low variance) tends to underfit, missing real patterns. A very complex model (low bias, high variance) tends to overfit, capturing noise as if it were signal. The goal is to find a sweet spot where both bias and variance are balanced so that the total expected error is minimized."",""confidence"":""high"",""key_points"":[""Bias: error from oversimplified assumptions"",""Variance: error from sensitivity to training data"",""Complex models reduce bias but increase variance"",""Optimal balance minimizes total error""]}",1.2376648660001592,164,299,463,0.000204,V2,2,2,1,1
+"{""answer"":""Inflation arises when the overall price level in an economy rises, typically due to a combination of factors such as excess demand relative to supply (demand‑pull), higher production costs (cost‑push), an increase in the money supply, and built‑in expectations of future price rises."",""confidence"":""high"",""key_points"":[""Demand‑pull pressure"",""Cost‑push factors"",""Monetary expansion"",""Expectations of future inflation""]}",0.9712063199999648,163,186,349,0.00013605,V2,2,3,1,1
+"{""answer"":""Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy, producing glucose and oxygen from carbon dioxide and water. It occurs in chloroplasts, where chlorophyll absorbs light, splitting water to release oxygen and electrons, which drive the synthesis of ATP and NADPH. These energy carriers then power the Calvin cycle, fixing CO₂ into glucose."",""confidence"":""high"",""key_points"":[""Light absorption by chlorophyll"",""Water splitting and oxygen release"",""ATP/NADPH production"",""Calvin cycle CO₂ fixation""]}",0.6177710110000589,162,280,442,0.00019229999999999999,V2,2,4,1,1
+"{""answer"":""Binary search runs in O(log n) time because each comparison eliminates half of the remaining elements, reducing the search space exponentially."",""confidence"":""high"",""key_points"":[""logarithmic time"",""halves search space each step"",""requires sorted array"",""worst‑case O(log n)""]}",0.8871293590000278,167,162,329,0.00012225000000000002,V2,2,5,1,1
+"{""answer"":""Newton's second law states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass; mathematically, F = ma."",""confidence"":""high"",""key_points"":[""Force equals mass times acceleration"",""Acceleration is proportional to net force"",""Mass is constant for a given object"",""Direction of acceleration matches net force""]}",1.1708204920000753,164,209,373,0.00015000000000000001,V2,2,6,1,1
+"{""answer"":""TCP (Transmission Control Protocol) is a connection-oriented, reliable, ordered, and flow‑controlled protocol that ensures all data arrives intact and in sequence, at the cost of higher overhead. UDP (User Datagram Protocol) is connectionless, unreliable, and does not guarantee ordering or delivery, but has lower latency and overhead, making it suitable for real‑time or multicast applications."",""confidence"":""high"",""key_points"":[""Connection-oriented vs connectionless"",""Reliability and ordering"",""Overhead and speed"",""Typical use cases""]}",0.5355942940000205,165,234,399,0.00016515,V2,2,7,1,1
+"{""answer"":""The main causes of World War I were militarism, alliances, imperialism, and nationalism, with the immediate spark being the assassination of Archduke Franz Ferdinand."",""confidence"":""high"",""key_points"":[""Militarism and arms race"",""Entangled alliance system"",""Imperial competition"",""Nationalist tensions""]}",0.5841768240002239,167,186,353,0.00013665,V2,2,8,1,1
+"{""answer"":""A p‑value is the probability, assuming the null hypothesis is true, of obtaining a test statistic at least as extreme as the one observed. It quantifies how incompatible the data are with the null hypothesis; smaller p‑values suggest stronger evidence against the null."",""confidence"":""high"",""key_points"":[""Probability of extreme data under null"",""Used to assess evidence against null"",""Lower p‑value = stronger evidence"",""Common threshold: 0.05""]}",1.7605601520003802,164,166,330,0.00012419999999999998,V2,2,9,1,1
+"{""answer"":""An activation function takes the weighted sum of a neuron’s inputs and transforms it into the neuron’s output. It introduces non‑linearity, allowing the network to model complex relationships, and it also bounds or scales the output so that subsequent layers receive meaningful signals. Common choices include sigmoid, tanh, ReLU and its variants."",""confidence"":""high"",""key_points"":[""Introduces non‑linearity"",""Transforms weighted sum to output"",""Enables learning of complex patterns"",""Common types: sigmoid, tanh, ReLU""]}",0.46593269499999224,165,225,390,0.00015975,V2,2,10,1,1
+"{""answer"":""Supervised learning uses labeled data to train a model to predict an output variable, while unsupervised learning uses unlabeled data to discover patterns or structure such as clusters or associations."",""confidence"":""high"",""key_points"":[""Uses labeled data for prediction"",""Uses unlabeled data for pattern discovery"",""Typical tasks: classification/regression vs clustering/association""]}",0.5615303049999056,236,143,379,0.00012119999999999999,V3,3,1,1,1
+"{""answer"":""The bias‑variance trade‑off describes the relationship between a model’s ability to fit training data (low bias) and its sensitivity to fluctuations in the training set (high variance). A model with high bias underfits, missing real patterns; a model with high variance overfits, capturing noise. The goal is to find a sweet spot where both bias and variance are balanced, yielding good generalization."",""confidence"":""high"",""key_points"":[""High bias → underfitting"",""High variance → overfitting"",""Goal: balance for best generalization"",""Regularization helps reduce variance""]}",0.8476682430000437,232,303,535,0.0002166,V3,3,2,1,1
+"{""answer"":""Inflation is the sustained rise in the general price level of goods and services in an economy. It is typically caused by a combination of factors: 1) demand‑pull inflation, where aggregate demand outpaces supply; 2) cost‑push inflation, where rising production costs (e.g., wages, raw materials) force firms to raise prices; 3) built‑in inflation, where expectations of future price increases lead to higher wages and prices; and 4) monetary factors, such as excessive growth of the money supply or low interest rates that stimulate spending. Supply‑side shocks (e.g., oil price spikes or natural disasters) can also trigger temporary inflationary pressures."",""confidence"":""high"",""key_points"":[""Demand‑pull and cost‑push forces"",""Monetary expansion and low rates"",""Supply shocks can trigger inflation""]}",1.0281172710001556,231,281,512,0.00020325,V3,3,3,1,1
+"{""answer"":""Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy, producing glucose and oxygen from carbon dioxide and water. It occurs mainly in chloroplasts, where chlorophyll absorbs sunlight, exciting electrons that travel through the electron transport chain, generating ATP and NADPH. These energy carriers then fuel the Calvin cycle, fixing CO₂ into glucose. Oxygen is released as a byproduct during the light-dependent reactions."",""confidence"":""high"",""key_points"":[""Light-dependent reactions produce ATP & NADPH"",""Calvin cycle fixes CO₂ into glucose"",""Oxygen released as waste""]}",1.6862130859999525,230,183,413,0.00014429999999999998,V3,3,4,1,1
+"{""answer"":""Binary search runs in O(log n) time in the worst case (and also on average). Each comparison eliminates half of the remaining elements, so after k steps at most 2^k elements remain; solving 2^k = n gives k = log₂n. Thus the number of steps grows logarithmically with the input size. This assumes the data structure is sorted and supports random access (e.g., an array)."",""confidence"":""high"",""key_points"":[""Halves search space each step"",""Requires sorted data"",""Time complexity is O(log n)"",""Depends on random access""]}",3.464990026999658,235,224,459,0.00016964999999999998,V3,3,5,1,1
+"{""answer"":""Newton's second law of motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass, expressed as F = ma."",""confidence"":""high"",""key_points"":[""Force equals mass times acceleration"",""Net force determines acceleration"",""Mass is constant for a given object"",""Direction of force and acceleration are the same""]}",0.6223122050000711,232,182,414,0.000144,V3,3,6,1,1
+"{""answer"":""TCP (Transmission Control Protocol) is a connection-oriented, reliable protocol that guarantees ordered delivery, error checking, and flow control, making it suitable for applications that require data integrity such as web browsing and file transfer. UDP (User Datagram Protocol) is connectionless, faster, and has minimal overhead; it does not guarantee order, reliability, or flow control, which makes it ideal for real-time applications like streaming, gaming, and VoIP where speed is more critical than perfect delivery."",""confidence"":""high"",""key_points"":[""Connection-oriented vs connectionless"",""Reliable ordered delivery vs best-effort"",""Higher overhead vs lower overhead"",""Used for web/FTP vs streaming/gaming""]}",4.3765026619998935,233,218,451,0.00016575,V3,3,7,1,1
+"{""answer"":""The main causes of World War I were a combination of long‑term structural factors and a triggering event: a growing arms race and militarism, a complex web of defensive alliances, imperial competition for colonies, and intense nationalist fervor across Europe. The immediate spark was the 1914 assassination of Archduke Franz Ferdinand of Austria‑Hungary, which set off a chain reaction of mobilizations and declarations of war."",""confidence"":""high"",""key_points"":[""Militarism and arms race"",""Entangled alliance system"",""Imperial rivalries"",""Nationalist tensions""]}",3.961143622000236,235,238,473,0.00017805,V3,3,8,1,1
+"{""answer"":""A p‑value is the probability, assuming the null hypothesis is true, of obtaining a test statistic at least as extreme as the one observed. It quantifies how incompatible the data are with the null hypothesis; a small p‑value suggests the observed effect is unlikely to have arisen by chance alone."",""confidence"":""high"",""key_points"":[""Probability under null"",""Measures evidence against null"",""Small p‑value indicates significance""]}",3.548314535999907,232,161,393,0.0001314,V3,3,9,1,1
+"{""answer"":""An activation function in a neural network takes the weighted sum of inputs to a neuron and transforms it into the neuron's output. It introduces non‑linearity, allowing the network to learn complex patterns, and often bounds the output to a specific range (e.g., 0–1 or –1 to 1). By applying this function at each layer, the network can approximate arbitrary functions and propagate gradients during training."",""confidence"":""high"",""key_points"":[""Introduces non‑linearity"",""Bounds output to a range"",""Enables learning of complex patterns""]}",2.5862484699996457,233,203,436,0.00015675,V3,3,10,1,1
